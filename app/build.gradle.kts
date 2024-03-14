@@ -1,3 +1,4 @@
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -5,7 +6,17 @@ plugins {
 
 android {
     namespace = "app.android.simple_chat_app"
-    compileSdk = 33
+    compileSdk = 34
+
+    buildFeatures{
+        dataBinding = true
+    }
+
+    dataBinding{
+        enable = true
+    }
+
+
 
     defaultConfig {
         applicationId = "app.android.simple_chat_app"

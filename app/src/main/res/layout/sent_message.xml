@@ -5,38 +5,38 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
+    android:id="@+id/sent_bubble"
    >
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/sendAvatar"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="24dp"
         android:src="@drawable/avatar"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/sendText"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/sendText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/send"
         android:padding="15dp"
         android:textColor="@color/white"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/sendAvatar"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintWidth_max="300dp"
-        tools:text="Test Hello WOrld\nOk This is A Test Right NOW!" />
+        tools:text="@string/lorem_ipsum" />
 
     <TextView
+        android:id="@+id/sendTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/sendText"
+        app:layout_constraintTop_toBottomOf="@+id/sendText"
         tools:text="2014/02/02 - 12:24:42 PM" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

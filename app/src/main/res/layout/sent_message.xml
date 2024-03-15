@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
     android:id="@+id/sent_bubble"
-    android:padding="5dp"
+    android:paddingBottom="3dp"
    >
 
     <ImageView

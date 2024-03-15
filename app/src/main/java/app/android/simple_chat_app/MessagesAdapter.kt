@@ -15,11 +15,11 @@ class MessagesAdapter(val messages:ArrayList<SampleMessage>,val layoutInflater: 
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseViewHolder {
         if(viewType==1){
-            val binding:SentMessageBinding = SentMessageBinding.inflate(layoutInflater)
-            return SentMessageVH(binding.root)
+            val view = LayoutInflater.from(parent.context).inflate(R.layout.sent_message,parent,false)
+            return SentMessageVH(view)
         }else{
-            val binding:RecievedMessageBinding = RecievedMessageBinding.inflate(layoutInflater)
-            return RecieveMessageVH(binding.root)
+            val view = LayoutInflater.from(parent.context).inflate(R.layout.recieved_message,parent,false)
+            return RecieveMessageVH(view)
         }
     }
 

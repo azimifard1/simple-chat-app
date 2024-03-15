@@ -9,6 +9,6 @@ data class SampleMessage(val text:String,val time:String,val isSent:Boolean){
 
     @RequiresApi(Build.VERSION_CODES.O)
     constructor(text: String, isSent: Boolean):this(text,LocalDateTime.now().format(
-        DateTimeFormatter.ofPattern("d L m - HH:mm:ss a")),isSent)
+        DateTimeFormatter.ofPattern("d MMM u - HH:mm:ss a")),isSent)
 
 }

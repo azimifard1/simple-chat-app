@@ -13,11 +13,11 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:src="@drawable/avatar"
-        app:layout_constraintBottom_toBottomOf="@+id/sendText"
+        app:layout_constraintBottom_toBottomOf="@+id/sent_text"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/sendText"
+        android:id="@+id/sent_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/send"
@@ -30,14 +30,14 @@
         tools:text="@string/lorem_ipsum" />
 
     <TextView
-        android:id="@+id/sendTime"
+        android:id="@+id/sent_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="5dp"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/sendText"
-        app:layout_constraintTop_toBottomOf="@+id/sendText"
+        app:layout_constraintStart_toStartOf="@+id/sent_text"
+        app:layout_constraintTop_toBottomOf="@+id/sent_text"
         tools:text="2014/02/02 - 12:24:42 PM" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

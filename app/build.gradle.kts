@@ -10,10 +10,7 @@ android {
 
     buildFeatures{
         dataBinding = true
-    }
-
-    dataBinding{
-        enable = true
+        viewBinding = true
     }
 
 
